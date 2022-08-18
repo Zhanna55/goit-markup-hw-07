@@ -18,9 +18,7 @@
   margin-right: 93px;
 }
 .footer__text {
-  font-weight: 700;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(700, null, 1.14, 0.03em);
   text-transform: uppercase;
   margin-bottom: 20px;
   color: #ffffff;
@@ -31,10 +29,7 @@
 }
 .address__link {
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(400, 14px, 1.71, 0.03em);
   color: var(--address-link-color);
   transition: color var(--transition-duration) var(--transition-timing-function);
   &--white {
@@ -59,9 +54,7 @@
     border-color: var(--accent-color);
   }
   &::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
+    @include font(null, 16px, 1.25, 0.03em);
     color: rgba(255, 255, 255, 0.6);
   }
 }

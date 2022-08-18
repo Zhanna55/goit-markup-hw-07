@@ -7,11 +7,8 @@
 
 .menu-list-item {
   font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
+   @include font(500,16px,1.63,0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   cursor: pointer;
   padding: 6px 22px;
   border-radius: 4px;
@@ -60,10 +57,7 @@
   top: 0;
   left: 0;
   transform: translateY(100%);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
+   @include font(400,18px,1.56,0.03em);
   padding: 63px 24px;
   width: 100%;
   height: 100%;
@@ -83,17 +77,11 @@
   border-left: 1px solid #eeeeee;
 }
 .projects-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+   @include font(700,18px,2,0.06em);
   margin-bottom: 4px;
   color: var(--title-text-color);
 }
 .projects-text {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
+   @include font(400,16px,1.88,0.03em);
   color: var(--primary-text-color);
 }

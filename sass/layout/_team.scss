@@ -19,17 +19,12 @@
     padding-bottom: 30px;
   }
   &__title {
-    font-size: 16px;
-    line-height: 1.19;
-    font-weight: 500;
-    letter-spacing: 0.03em;
+     @include font(500,16px,1.19,0.03em);
     margin-bottom: 10px;
     color: var(--title-text-color);
   }
   &__text {
-    font-size: 16px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+     @include font(null,16px,1.19,0.03em);
     margin-bottom: 16px;
   }
 }
