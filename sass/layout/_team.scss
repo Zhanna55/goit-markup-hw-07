@@ -1,7 +1,3 @@
-.team {
-  background-color: var(--team-bg-color);
-}
-
 .gallery-list {
   display: flex;
   gap: 30px;
@@ -19,12 +15,12 @@
     padding-bottom: 30px;
   }
   &__title {
-     @include font(500,16px,1.19,0.03em);
+    @include font(500, 16px, 1.19, 0.03em);
     margin-bottom: 10px;
     color: var(--title-text-color);
   }
   &__text {
-     @include font(null,16px,1.19,0.03em);
+    @include font(null, 16px, 1.19, 0.03em);
     margin-bottom: 16px;
   }
 }
